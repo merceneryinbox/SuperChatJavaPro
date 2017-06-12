@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="549.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <tabs>
+    <Tab fx:id="tubMain" text="Общий чат">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextFlow id="txtFlowFX8MainchatWindow" fx:id="txtFlowFX8MainWindow" layoutX="14.0" layoutY="14.0" prefHeight="308.0" prefWidth="387.0">
+                     <effect>
+                        <Lighting bumpInput="$null">
+                           <light>
+                              <Light.Distant color="#e8dfdf" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </TextFlow>
+                  <Button layoutX="411.0" layoutY="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Button" />
+                  <Button layoutX="411.0" layoutY="68.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Button" />
+                  <CheckBox layoutX="14.0" layoutY="343.0" mnemonicParsing="false" text="CheckBox" />
+                  <CheckBox layoutX="14.0" layoutY="386.0" mnemonicParsing="false" text="CheckBox" />
+                  <CheckBox layoutX="14.0" layoutY="428.0" mnemonicParsing="false" text="CheckBox" />
+                  <Button layoutX="383.0" layoutY="424.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Приватная беседа">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextFlow layoutX="14.0" layoutY="14.0" prefHeight="285.0" prefWidth="367.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Свой профиль">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+      <Tab text="Избранный контакты">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+      <Tab text="Настройки">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+  </tabs>
+   <effect>
+      <DropShadow />
+   </effect>
+</TabPane>
